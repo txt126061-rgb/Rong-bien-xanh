@@ -1,0 +1,14 @@
+html{scroll-behavior:smooth}
+:focus-visible{outline:3px solid #f2a02b;outline-offset:2px}
+.nori-sheet{
+  background:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 2px,transparent 2px 9px),
+    linear-gradient(160deg,#0d1f17,#183326 60%,#0a1812);
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+.filter-btn.active{background:#1b4332;color:#fff;border-color:#1b4332}
+#mobileNav:not(.hidden){display:flex}
+#checkoutView:not(.hidden){display:flex}
+#modal:not(.hidden){display:flex}
+body.lock{overflow:hidden}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

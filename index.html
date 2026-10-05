@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rong Biển Xanh – Rong biển khô chuẩn Hàn Quốc & Nhật Bản</title>
+<meta name="description" content="Rong biển khô tự nhiên: nấu canh, cuộn sushi, snack, ăn liền. Giao nhanh, giá sỉ lẻ tốt nhất.">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{nori:{50:'#eef5f0',100:'#d6e7db',600:'#2f6b4f',700:'#25573f',800:'#1b4332',900:'#12301f'},ocean:{50:'#eef7fb',100:'#d5eaf3',300:'#8cc7de',600:'#2a8bb0'},sun:{400:'#f6b84e',500:'#f2a02b',600:'#d98a14'}},fontFamily:{sans:['"Be Vietnam Pro"','sans-serif'],display:['"Playfair Display"','serif']}}}}
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-nori-900 bg-white antialiased">
+
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-nori-100">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+  <img src="image/logo.jpg" alt="Logo Rong Biển Xanh" class="h-10 w-auto object-contain">
+</a>
+    <nav class="hidden md:flex gap-7 text-sm font-medium">
+      <a href="#san-pham" class="hover:text-ocean-600">Sản phẩm</a>
+      <a href="#uu-diem" class="hover:text-ocean-600">Vì sao chọn chúng tôi</a>
+      <a href="#danh-gia" class="hover:text-ocean-600">Đánh giá</a>
+      <a href="#lien-he" class="hover:text-ocean-600">Liên hệ</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button id="openCart" class="relative p-2 rounded-full hover:bg-nori-50" aria-label="Mở giỏ hàng">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>
+        <span id="cartCount" class="absolute -top-0.5 -right-0.5 bg-sun-500 text-nori-900 text-xs font-bold rounded-full w-5 h-5 grid place-items-center">0</span>
+      </button>
+      <button id="burger" class="md:hidden p-2" aria-label="Menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav id="mobileNav" class="hidden md:hidden border-t border-nori-100 px-4 py-3 flex-col gap-3 text-sm font-medium">
+    <a href="#san-pham">Sản phẩm</a><a href="#uu-diem">Vì sao chọn chúng tôi</a><a href="#danh-gia">Đánh giá</a><a href="#lien-he">Liên hệ</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="bg-nori-800 text-white relative overflow-hidden">
+  <!-- 👇 Thêm relative z-10 vào lớp bao quanh nội dung để đẩy chữ lên trên ảnh -->
+  <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center relative z-10">
+    <div>
+      <p class="inline-block bg-nori-700 text-nori-100 text-sm px-3 py-1 rounded-full mb-5">Nhập khẩu chính ngạch Hàn Quốc & Nhật Bản</p>
+      <h1 class="font-display text-4xl md:text-6xl font-bold leading-tight">Rong biển khô, vị biển giữ nguyên trong từng lá</h1>
+      <p class="mt-5 text-nori-100 max-w-lg leading-relaxed">Phơi khô tự nhiên, không phẩm màu, không chất bảo quản.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#san-pham" class="bg-sun-500 hover:bg-sun-400 text-nori-900 font-semibold px-6 py-3 rounded-full transition">Mua rong biển ngay</a>
+        <a href="#uu-diem" class="border border-nori-100/40 hover:bg-nori-700 px-6 py-3 rounded-full transition">Xem giá sỉ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 👇 Ảnh được tách ra ngoài, đặt absolute để làm nền, dịch sang phải và nằm dưới lớp chữ -->
+  <div class="absolute right-0 top-0 bottom-0 w-full md:w-1/2 z-0 pointer-events-none opacity-30 md:opacity-100">
+    <img src="image/mausp.png" alt="Rong biển tươi cao cấp" class="w-full h-full object-cover md:object-contain object-right">
+  </div>
+
+  <svg viewBox="0 0 1440 60" class="block w-full text-ocean-50 relative z-10" preserveAspectRatio="none" height="40"><path fill="currentColor" d="M0 30c240 40 480 40 720 10s480-30 720 5v15H0z"/></svg>
+</section>
+
+<!-- ƯU ĐIỂM -->
+<section id="uu-diem" class="bg-ocean-50 py-14">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-5">
+    <div class="bg-white rounded-xl p-6 border border-ocean-100"><div class="text-3xl mb-3">🌿</div><h3 class="font-semibold text-lg">100% tự nhiên</h3><p class="text-sm mt-2 text-nori-700 leading-relaxed">Chỉ rong biển và muối biển. Không phẩm màu, không chất bảo quản.</p></div>
+    <div class="bg-white rounded-xl p-6 border border-ocean-100"><div class="text-3xl mb-3">🚚</div><h3 class="font-semibold text-lg">Giao hàng nhanh</h3><p class="text-sm mt-2 text-nori-700 leading-relaxed">ktx giao trong 2 giờ. Toàn quốc 1–3 ngày. Miễn phí ship đơn từ 300.000đ.</p></div>
+    <div class="bg-white rounded-xl p-6 border border-ocean-100"><div class="text-3xl mb-3">💰</div><h3 class="font-semibold text-lg">Giá sỉ lẻ tốt nhất</h3><p class="text-sm mt-2 text-nori-700 leading-relaxed">Mua lẻ giá gốc, mua từ 10 gói giảm thêm 10%. Nhắn Zalo để nhận bảng giá sỉ.</p></div>
+  </div>
+</section>
+
+<!-- SẢN PHẨM -->
+<section id="san-pham" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl md:text-4xl font-bold">Sản phẩm nổi bật</h2>
+    <p class="mt-2 text-nori-700">Chọn theo cách bạn muốn dùng rong biển.</p>
+    <div id="filters" class="mt-6 flex flex-wrap gap-2"></div>
+    <div id="productGrid" class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"></div>
+  </div>
+</section>
+
+<!-- ĐÁNH GIÁ -->
+<section id="danh-gia" class="bg-nori-50 py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl md:text-4xl font-bold">Khách hàng nói gì</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-5">
+      <figure class="bg-white rounded-xl p-6"><div class="text-sun-500">★★★★★</div><blockquote class="mt-3 text-sm leading-relaxed">Rong biển ăn liền không béo còn tốt cho sức khoẻ.</blockquote><figcaption class="mt-4 text-sm font-semibold">Anh A – R36, TP.HCM</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- FOOTER -->
+<footer id="lien-he" class="bg-nori-900 text-nori-100 pt-14 pb-8">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10 text-sm">
+    <div><h3 class="font-display text-xl text-white">Rong Biển Xanh</h3><p class="mt-3 leading-relaxed">Chuyên rong biển khô nhập khẩu, bán sỉ và lẻ toàn quốc.</p></div>
+    <div><h4 class="font-semibold text-white">Liên hệ</h4>
+      <ul class="mt-3 space-y-2"><li>📍 KTX  nam R23</li><li>📞 <a class="underline" href="tel:0966770176">096 677 0176</a> (Zalo)</li><li>✉️ txt126061@gmail.com</li><li>👍 <a class="underline" href="https://www.facebook.com/tran.xuanthanh.696120/" target="_blank" rel="noopener">fb của chủ</a></li></ul></div>
+    <div><h4 class="font-semibold text-white">Chính sách đổi trả</h4>
+      <ul class="mt-3 space-y-2 leading-relaxed"><li>Đổi trả trong 7 ngày nếu sản phẩm lỗi hoặc hết hạn.</li><li>Hoàn tiền 100% nếu giao sai hàng.</li><li>Giữ nguyên bao bì và chụp ảnh khi nhận hàng.</li></ul></div>
+  </div>
+  <p class="mt-10 text-center text-xs text-nori-100/60">© 2026 Rong Biển Xanh. Bảo lưu mọi quyền.</p>
+</footer>
+
+<!-- CART DRAWER -->
+<div id="overlay" class="fixed inset-0 z-50 bg-black/50 opacity-0 pointer-events-none transition-opacity"></div>
+<aside id="drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col" aria-label="Giỏ hàng">
+  <div class="flex items-center justify-between px-5 h-16 border-b border-nori-100">
+    <h2 class="font-display text-xl font-bold" id="drawerTitle">Giỏ hàng</h2>
+    <button id="closeCart" class="p-2 text-2xl leading-none" aria-label="Đóng">×</button>
+  </div>
+  <div id="cartView" class="flex-1 flex flex-col min-h-0">
+    <div id="cartItems" class="flex-1 overflow-y-auto px-5 py-4 space-y-4"></div>
+    <div class="border-t border-nori-100 p-5">
+      <div class="flex justify-between font-semibold text-lg"><span>Tạm tính</span><span id="cartTotal">0đ</span></div>
+      <p class="text-xs text-nori-600 mt-1" id="shipNote"></p>
+      <button id="toCheckout" class="mt-4 w-full bg-nori-800 hover:bg-nori-700 text-white font-semibold py-3 rounded-full">Đặt hàng</button>
+    </div>
+  </div>
+  <form id="checkoutView" class="hidden flex-1 flex-col min-h-0" novalidate>
+    <div class="flex-1 overflow-y-auto px-5 py-4 space-y-3">
+      <button type="button" id="backCart" class="text-sm text-ocean-600">← Quay lại giỏ hàng</button>
+      <label class="block text-sm font-medium">Họ và tên<input name="name" required class="mt-1 w-full border border-nori-100 rounded-lg px-3 py-2"></label>
+      <label class="block text-sm font-medium">Số điện thoại<input name="phone" type="tel" required class="mt-1 w-full border border-nori-100 rounded-lg px-3 py-2"></label>
+      <label class="block text-sm font-medium">Địa chỉ nhận hàng<input name="address" required class="mt-1 w-full border border-nori-100 rounded-lg px-3 py-2"></label>
+      <label class="block text-sm font-medium">Ghi chú (không bắt buộc)<textarea name="note" rows="3" class="mt-1 w-full border border-nori-100 rounded-lg px-3 py-2"></textarea></label>
+      <p id="formError" class="text-sm text-red-600"></p>
+    </div>
+    <div class="border-t border-nori-100 p-5 space-y-2">
+      <div class="flex justify-between font-semibold"><span>Tổng cộng</span><span id="checkoutTotal"></span></div>
+      <button type="submit" data-mode="zalo" class="w-full bg-ocean-600 hover:bg-ocean-300 hover:text-nori-900 text-white font-semibold py-3 rounded-full">Gửi đơn qua Zalo</button>
+      <button type="submit" data-mode="direct" class="w-full bg-sun-500 hover:bg-sun-400 text-nori-900 font-semibold py-3 rounded-full">Đặt hàng, thanh toán khi nhận</button>
+    </div>
+  </form>
+</aside>
+
+<div id="modal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/50 p-4">
+  <div class="bg-white rounded-2xl p-8 max-w-sm text-center">
+    <div class="text-5xl">✅</div><h3 class="font-display text-2xl font-bold mt-3">Đặt hàng thành công</h3>
+    <p class="text-sm mt-2 text-nori-700" id="modalMsg"></p>
+    <button id="closeModal" class="mt-6 bg-nori-800 text-white px-6 py-2 rounded-full">Tiếp tục mua sắm</button>
+  </div>
+</div>
+<div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-[70] bg-nori-900 text-white text-sm px-4 py-2 rounded-full opacity-0 pointer-events-none transition-opacity"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
